@@ -1,0 +1,93 @@
+/** Global Settings **/
+
+* {
+    box-sizing: border-box;
+    padding: 0px;
+    margin: 0px;
+}
+
+body {
+    background-color: #FFFFFF;
+    width: 100%;
+    overflow-x: hidden;
+}
+
+/** Header Settings **/
+
+header {
+    display: grid;
+    grid-template-columns: 1fr 4fr;
+    text-align: center;
+    width: 100%;
+    height: 15vh;
+}
+
+.logo,
+#logo {
+    height: 100%;
+    width: 100%;
+}
+
+.menus {
+    display: flex;
+    height: 100%;
+    width: 100%;
+    justify-content: right;
+    align-items: center;
+    padding-right: 30px;
+}
+
+ul {
+    list-style: none;
+}
+
+li {
+    display: inline-block;
+    margin: 5px;
+}
+
+/** Container Settings **/
+
+.container {
+    margin: 50px 0px;
+    display: block;
+    text-align: center;
+}
+
+.layout li {
+    padding: 7px;
+}
+
+.layout li:hover {
+    background-color: #35C2F3;
+    cursor: pointer;
+}
+
+.quote {
+    margin: 10px 0px;
+}
+
+.gallery {
+    margin: 50px 20px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    row-gap: 15px;
+    column-gap: 15px;
+}
+
+.gallery img {
+    width: 100%;
+    height: 100%;
+    transform: scale(1);
+    transition: 0.7s ease-in-out;
+}
+
+.imgcontainer {
+    overflow: hidden;
+}
+
+.imgcontainer img:hover {
+    transform: scale(1.2);
+    cursor: pointer;
+}

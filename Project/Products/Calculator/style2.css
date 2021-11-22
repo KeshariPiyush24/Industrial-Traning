@@ -1,0 +1,132 @@
+@import url('https://fonts.googleapis.com/css2?family=Space+Mono:wght@700&display=swap');
+
+/** Global Settings **/
+
+* {
+    box-sizing: border-box;
+    padding: 0px;
+    margin: 0px;
+}
+
+body {
+    width: 100vw;
+    height: 100vh;
+    background-image: linear-gradient(to top right, #d16ba5, #c56db4, #b570c2, #a075cf, #847bda, #6a89e6, #4895ee, #00a1f2, #00b4f2, #00c4e0, #00d0c2, #33d99d);
+    background-repeat: no-repeat;
+    text-align: center;
+    color: #FFFFFF;
+}
+
+button {
+    border: 0px;
+    padding: 0px;
+    margin: 0px;
+}
+
+/** Heading Settings **/
+
+h1 {
+    font-size: 55px;
+    margin-top: 20px;
+    font-family: 'Space Mono',
+        monospace;
+    color: #D35400;
+}
+
+/** Container Settings **/
+
+.calculator {
+    background-color: #F7F9F9;
+    border-radius: 3%;
+    overflow: hidden;
+    width: 60%;
+    height: 70%;
+    margin: 30px 20%;
+    display: grid;
+    grid-template-rows: 2fr 3fr 1fr;
+    grid-template-columns: 3fr 2fr;
+    grid-column-gap: 5px;
+    grid-row-gap: 5px;
+    box-shadow: 0 7px 11px 0 rgba(0, 0, 0, 0.2),
+        0 8px 23px 0 rgba(0, 0, 0, 0.19);
+}
+
+.calculator:hover {
+    box-shadow: 0 12px 17px 0 rgba(0, 0, 0, 0.2),
+        0 11px 26px 0 rgba(0, 0, 0, 0.19);
+}
+
+.calculatorBtn {
+    font-size: 45px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    color: #FF7F50;
+}
+
+.calculatorBtn:hover {
+    font-size: 52px;
+    background-color: #FF7F50;
+    color: #FFFFFF;
+}
+
+/** Screen Settings **/
+
+.screen {
+    grid-column-start: 1;
+    grid-column-end: 3;
+    grid-row-start: 1;
+    grid-row-end: 2;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    color: #FF7F50;
+    font-size: 70px;
+    padding: 20px;
+}
+
+/** Numpad Settings **/
+
+.numpad {
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 2;
+    grid-row-end: 3;
+}
+
+.numpad {
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+.numpadBtn {
+    width: 1fr;
+    height: 1fr;
+}
+
+.numpadBtn:hover {}
+
+/** Misc Settings **/
+
+.misc {
+    display: grid;
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 2;
+    grid-row-end: 3;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+}
+
+/** Symbols Settings **/
+
+.symbols {
+    grid-column-start: 1;
+    grid-column-end: 3;
+    grid-row-start: 3;
+    grid-row-end: 4;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+}

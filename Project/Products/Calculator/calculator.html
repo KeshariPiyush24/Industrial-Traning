@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../CSS/style.css" />
+    <link rel="stylesheet" href="../CSS/button.css" />
+    <link rel="stylesheet" href="../CSS/text.css" />
+    <link rel="stylesheet" href="../CSS/dropdown.css" />
+    <link rel="stylesheet" href="./style2.css" />
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.13.0/css/all.css"
+        integrity="sha384-Bfad6CLCknfcloXFOyFnlgtENryhrpZCe29RTifKEixXQZ38WheV+i/6YWSzkz3V" crossorigin="anonymous" />
+    <title>Calculator</title>
+</head>
+
+<body>
+
+    <h1>Basic Calculator</h1>
+
+    <div class="calculator">
+        <div class="screen" id="screen">
+            0
+        </div>
+
+        <div class="misc">
+            <button class="calculatorBtn miscBtn" onclick="ac()">AC</button>
+            <button class="calculatorBtn miscBtn" onclick="backspace()"><i class="fas fa-backspace"
+                    aria-hidden="true"></i></button>
+            <button class="calculatorBtn miscBtn" onclick=""><i class="fa fa-arrow-left"
+                    aria-hidden="true"></i></button>
+            <button class="calculatorBtn miscBtn" onclick="equals()"><i class="fas fa-equals"
+                    aria-hidden="true"></i></button>
+        </div>
+
+        <div class="numpad">
+            <button class="calculatorBtn numpadBtn" onclick="enterNum(7)">7</button>
+            <button class="calculatorBtn numpadBtn" onclick="enterNum(8)">8</button>
+            <button class="calculatorBtn numpadBtn" onclick="enterNum(9)">9</button>
+            <button class="calculatorBtn numpadBtn" onclick="enterNum(4)">4</button>
+            <button class="calculatorBtn numpadBtn" onclick="enterNum(5)">5</button>
+            <button class="calculatorBtn numpadBtn" onclick="enterNum(6)">6</button>
+            <button class="calculatorBtn numpadBtn" onclick="enterNum(1)">1</button>
+            <button class="calculatorBtn numpadBtn" onclick="enterNum(2)">2</button>
+            <button class="calculatorBtn numpadBtn" onclick="enterNum(3)">3</button>
+            <button class="calculatorBtn numpadBtn" onclick="zero(0)">0</button>
+            <button class="calculatorBtn numpadBtn" onclick="doubleZero()">00</button>
+            <button class="calculatorBtn numpadBtn" onclick="dot()">.</button>
+        </div>
+
+        <div class="symbols">
+            <button class="calculatorBtn" onclick="add()"><i class="fa fa-plus" aria-hidden="true"></i></button>
+            <button class="calculatorBtn" onclick="sub()"><i class="fa fa-minus" aria-hidden="true"></i></button>
+            <button class="calculatorBtn" onclick="mul()"><i class="fa fa-times" aria-hidden="true"></i></button>
+            <button class="calculatorBtn" onclick="div()"><i class="fas fa-divide" aria-hidden="true"></i></button>
+        </div>
+    </div>
+
+    <script type="text/javascript" src="./script.js"></script>
+</body>
+
+</html>

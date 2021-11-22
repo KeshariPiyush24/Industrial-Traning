@@ -1,0 +1,30 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Space+Mono:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Arimo:wght@500&display=swap');
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+a:hover {
+    color: #35C2F3;
+}
+
+header,
+.layout {
+    font-family: 'Roboto',
+        sans-serif;
+    word-spacing: 2px;
+}
+
+.quote {
+    font-family: 'Arimo',
+        sans-serif;
+}
+
+h1 {
+    font-family: 'Space Mono',
+        monospace;
+    letter-spacing: 10px;
+}
